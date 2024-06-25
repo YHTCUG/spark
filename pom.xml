@@ -129,7 +129,7 @@
     <curator.version>2.7.1</curator.version>
     <okapi.version>0.4.2</okapi.version>
     <hive.group>org.spark-project.hive</hive.group>
-    <hive.classifier></hive.classifier>
+    <hive.classifier/>
     <!-- Version used in Maven Hive dependency -->
     <hive.version>1.2.1.spark2</hive.version>
     <hive23.version>2.3.5</hive23.version>
@@ -137,7 +137,7 @@
     <hive.version.short>1.2.1</hive.version.short>
     <!-- note that this should be compatible with Kafka brokers version 0.10 and up -->
     <kafka.version>2.3.0</kafka.version>
-    <derby.version>10.12.1.1</derby.version>
+    <derby.version>10.17.1.0</derby.version>
     <parquet.version>1.10.1</parquet.version>
     <orc.version>1.5.5</orc.version>
     <orc.classifier>nohive</orc.classifier>
@@ -149,7 +149,7 @@
     <ivy.version>2.4.0</ivy.version>
     <oro.version>2.0.8</oro.version>
     <codahale.metrics.version>3.1.5</codahale.metrics.version>
-    <avro.version>1.8.2</avro.version>
+    <avro.version>1.11.3</avro.version>
     <avro.mapred.classifier>hadoop2</avro.mapred.classifier>
     <aws.kinesis.client.version>1.8.10</aws.kinesis.client.version>
     <!-- Should be consistent with Kinesis client dependency -->
@@ -157,7 +157,7 @@
     <!-- the producer is used in tests -->
     <aws.kinesis.producer.version>0.12.8</aws.kinesis.producer.version>
     <!--  org.apache.httpcomponents/httpclient-->
-    <commons.httpclient.version>4.5.6</commons.httpclient.version>
+    <commons.httpclient.version>4.5.13</commons.httpclient.version>
     <commons.httpcore.version>4.4.10</commons.httpcore.version>
     <!--  commons-httpclient/commons-httpclient-->
     <httpclient.classic.version>3.1</httpclient.classic.version>
@@ -173,7 +173,7 @@
     <fasterxml.jackson.version>2.9.9</fasterxml.jackson.version>
     <snappy.version>1.1.7.3</snappy.version>
     <netlib.java.version>1.1.2</netlib.java.version>
-    <commons-codec.version>1.10</commons-codec.version>
+    <commons-codec.version>1.13</commons-codec.version>
     <commons-io.version>2.4</commons-io.version>
     <!-- org.apache.commons/commons-lang/-->
     <commons-lang2.version>2.6</commons-lang2.version>
@@ -185,7 +185,7 @@
     <joda.version>2.9.3</joda.version>
     <jodd.version>3.5.2</jodd.version>
     <jsr305.version>3.0.0</jsr305.version>
-    <libthrift.version>0.12.0</libthrift.version>
+    <libthrift.version>0.16.0</libthrift.version>
     <antlr4.version>4.7.1</antlr4.version>
     <jpam.version>1.1</jpam.version>
     <selenium.version>2.52.0</selenium.version>
@@ -203,8 +203,8 @@
     <arrow.version>0.12.0</arrow.version>
 
     <test.java.home>${java.home}</test.java.home>
-    <test.exclude.tags></test.exclude.tags>
-    <test.include.tags></test.include.tags>
+    <test.exclude.tags/>
+    <test.include.tags/>
 
     <!-- Package to use when relocating shaded classes. -->
     <spark.shade.packageName>org.sparkproject</spark.shade.packageName>
@@ -2593,7 +2593,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2606,7 +2606,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -2619,7 +2619,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -2801,7 +2801,7 @@
             </goals>
             <configuration>
               <target>
-                <mkdir dir="${project.build.directory}/tmp" />
+                <mkdir dir="${project.build.directory}/tmp"/>
               </target>
             </configuration>
           </execution>
@@ -2927,7 +2927,7 @@
         <!-- Do not need parquet-hadoop-bundle because we already have
           parquet-common, parquet-column and parquet-hadoop -->
         <hive.parquet.scope>provided</hive.parquet.scope>
-        <orc.classifier></orc.classifier>
+        <orc.classifier/>
         <datanucleus-core.version>4.1.17</datanucleus-core.version>
       </properties>
       <dependencies>
